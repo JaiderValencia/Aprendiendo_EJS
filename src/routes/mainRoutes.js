@@ -4,6 +4,6 @@ const router = express.Router();
 const mainController = require("../controllers/mainController");
 
 router.get("/", mainController.index);
-router.get("/detallemenu", mainController.menuDetails);
+router.get("/detallemenu/:id", mainController.menuDetails);
 
 module.exports = router;
